@@ -1,0 +1,6 @@
+- Move batch definitions in the classes (fixed models)
+- Move frame definitions in the classes (fixed frames)
+- Implement basic movement (smooth movement)
+- Implement rotating camera with mouse
+- Implement spells mechanism + graphics
+- Implement collision detection
