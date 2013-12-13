@@ -1,3 +1,6 @@
+#ifndef ACTOR_H
+#define ACTOR_H
+
 #include <GLTools.h>
 #include <GLShaderManager.h>
 #include <GLFrustum.h>
@@ -7,27 +10,28 @@
 #include <GLGeometryTransform.h>
 #include <StopWatch.h>
 
-#ifndef ACTOR_H
-#define ACTOR_H
-
 class Scene;
 
 class Actor {
 
 	protected:
-		int id;
-		GLFrame* frame;
-		GLTriangleBatch* model;
 		Scene* scene;
 
+		GLFrame* frame;
+		GLTriangleBatch* model;
+        M3DVector3f position;
+
+
 	public:
-		Actor(Scene *scene, int id);
+		Actor(Scene *scene, GLTriangleBatch *model, GLFrame *frame, M3DVector3f origin);
 		~Actor();
 
-		virtual void render() = 0;
-		virtual void setModel(GLBatch *model) = 0;
-		virtual void setFrame(GLFrame *frame) = 0;
-
+		virtual void render(GLShaderManager *shaderManager, GLMatrixStack *modelViewMatrix, GLMatrixStack *projectionMatrix,
+                    GLFrustum *viewFrustum, GLGeometryTransform *transformPipeline);
+        virtual void lookAt(M3DVector3f location);
+        virtual void getLookAt(M3DVector3f destination); // Just return the forward vector of the frame
+        virtual void setOrigin(M3DVector3f position);
+        virtual GLFrame *getFrame();
 };
 
 #endif

@@ -1,24 +1,26 @@
 #ifndef WIZARD_H
 #define WIZARD_H
 
+#include <string>
+
 #include <Actor.h>
 #include <Scene.h>
 
-class Wizard : public Actor {
-	// TODO
+using std::string;
 
-	float height;
-	M3DVector4f color;
+class Spell;
+
+class Wizard : public Actor {
+private:
+    int health;
+    string name;
+    vector<Spell *> *spells;
 
 public:
-	Wizard(Scene *scene, int id);
+	Wizard(int initialHealth, string name, Scene *scene, GLTriangleBatch *model, GLFrame *frame, M3DVector3f origin);
 	~Wizard();
 
-	void render();
-	void setModel(GLBatch *model);
-	void setFrame(GLFrame *frame);
-	void getOrigin();
-	void setOrigin(float x, float y, float z);
+    void cast(Spell *s);
 };
 
 #endif

@@ -1,6 +1,7 @@
 #include <GLTools.h>
 #include <GL/freeglut.h>
 #include <vector>
+#include <iostream>
 
 #include <Scene.h>
 #include <Actor.h>
@@ -9,19 +10,15 @@
 #define NUM_OF_PLAYERS 2
 
 // Describe the scene
-Scene *gameScene;
-Wizard *wizards[NUM_OF_PLAYERS];
-M3DVector4f vLightPos = { 0.0f, 10.0f, 5.0f, 1.0f };
-GLfloat floorColor[] = {1.0f, 0.0f, 0.0f, 1.0f}; 
-float floorWidth = 40.0f;
-float floorHeight = 40.0f;
-
-// Prototypes for GLUT
 void reshapeFunc(int newW, int newH);
 void renderFunc();
 void mouseMove(int x, int y);
 void specialKey(int key, int x, int y);
 void specialUpKey(int key, int x, int y);
+void keyFunc(unsigned char key, int x, int y);
+void keyUpFunc(unsigned char key, int x, int y);
+
+Scene *scene;
 
 // Main
 int main(int argc, char **argv){
@@ -30,7 +27,7 @@ int main(int argc, char **argv){
 
 	// Initialize GLUT and GLEW
 	gltSetWorkingDirectory(argv[0]);
-	
+
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH | GLUT_STENCIL);
 	glutInitWindowSize(800, 600);
@@ -40,6 +37,8 @@ int main(int argc, char **argv){
 	glutPassiveMotionFunc(mouseMove);
 	glutSpecialFunc(specialKey);
 	glutSpecialUpFunc(specialUpKey);
+	glutKeyboardFunc(keyFunc);
+	glutKeyboardUpFunc(keyUpFunc);
 
 	GLenum err = glewInit();
 
@@ -49,24 +48,20 @@ int main(int argc, char **argv){
 	}
 
 	// Build a scene
-	gameScene = new Scene(vLightPos, floorColor, floorWidth, floorHeight);
+	GLFrame *cameraFrame = new GLFrame();
+	GLFrame *stageFrame = new GLFrame();
+    M3DVector3f cameraOrigin = {0.0f, 0.0f, 0.0f};
+    M3DVector3f stageOrigin = {0.0f, 0.0f, -30.0f};
+    GLTriangleBatch *stageModel = new GLTriangleBatch();
+    gltMakeDisk(*stageModel, 5.0f, 10.0f, 20, 20);
+    stageFrame->RotateLocalX(1.0f);
 
-		// wizards
-	wizards[0] = new Wizard(gameScene, 0);
-
-	wizards[0]->setOrigin(0.0f, -2.0f, -30.0f);
-
-	gameScene->addActor(wizards[0]);
-
-	wizards[1] = new Wizard(gameScene, 1);
-
-	wizards[1]->setOrigin(0.0f, -2.0f, -5.0f);
-
-	gameScene->addActor(wizards[1]);
-
-		// spells
-
-		// lights
+	scene = new Scene();
+    Camera *camera = new Camera(scene, cameraFrame, cameraOrigin);
+    Stage *stage = new Stage(scene, stageModel, stageFrame, stageOrigin);
+    stage->setOrigin(stageOrigin);
+    scene->setCamera(camera);
+    scene->setStage(stage);
 
 	// Start GLUT main loop
 	glutMainLoop();
@@ -77,28 +72,32 @@ int main(int argc, char **argv){
 }
 
 void reshapeFunc(int newW, int newH){
+    glViewport(0, 0, newW, newH);
 	// Center the cursor
 	glutWarpPointer(newW/2, newH/2);
-	gameScene->reshape(newW, newH);
+	scene->reshape(newW, newH);
 }
 
 void renderFunc(){
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	gameScene->render();
+
+	scene->render();
+
 	glutSwapBuffers();
 	glutPostRedisplay();
 }
 
 void mouseMove(int x, int y){
-	// update deltaAngle
-	gameScene->mouseMove(x, y);
-	// glutWarpPointer(gameScene->windowW/2, gameScene->windowH/2);
+}
+
+void keyFunc(unsigned char key, int x, int y){
+}
+
+void keyUpFunc(unsigned char key, int x, int y){
 }
 
 void specialKey(int key, int x, int y){
-	gameScene->specialKey(key, x, y, false);
 }
 
 void specialUpKey(int key, int x, int y){
-	gameScene->specialKey(key, x, y, true);
 }

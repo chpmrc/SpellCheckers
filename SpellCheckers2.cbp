@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SpellCheckers2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SpellCheckers2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="GLTools/include" />
+					<Add directory="GLTools/include/GL" />
+				</Compiler>
+				<Linker>
+					<Add option="-lGL -lglut" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SpellCheckers2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="GLTools/include/GL/glew.h" />
+		<Unit filename="GLTools/include/GL/glxew.h" />
+		<Unit filename="GLTools/include/GL/wglew.h" />
+		<Unit filename="GLTools/include/GLBatch.h" />
+		<Unit filename="GLTools/include/GLBatchBase.h" />
+		<Unit filename="GLTools/include/GLFrame.h" />
+		<Unit filename="GLTools/include/GLFrustum.h" />
+		<Unit filename="GLTools/include/GLGeometryTransform.h" />
+		<Unit filename="GLTools/include/GLMatrixStack.h" />
+		<Unit filename="GLTools/include/GLShaderManager.h" />
+		<Unit filename="GLTools/include/GLTools.h" />
+		<Unit filename="GLTools/include/GLTriangleBatch.h" />
+		<Unit filename="GLTools/include/StopWatch.h" />
+		<Unit filename="GLTools/include/math3d.h" />
+		<Unit filename="GLTools/src/GLBatch.cpp" />
+		<Unit filename="GLTools/src/GLShaderManager.cpp" />
+		<Unit filename="GLTools/src/GLTools.cpp" />
+		<Unit filename="GLTools/src/GLTriangleBatch.cpp" />
+		<Unit filename="GLTools/src/glew.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="GLTools/src/math3d.cpp" />
+		<Unit filename="TODO.txt" />
+		<Unit filename="include/Actor.h" />
+		<Unit filename="include/Scene.h" />
+		<Unit filename="include/Spell.cpp" />
+		<Unit filename="include/Spell.h" />
+		<Unit filename="include/Wizard.h" />
+		<Unit filename="src/Actor.cpp" />
+		<Unit filename="src/Game.cpp" />
+		<Unit filename="src/Scene.cpp" />
+		<Unit filename="src/Wizard.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

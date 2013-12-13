@@ -11,53 +11,42 @@
 #include <StopWatch.h>
 #include <vector>
 
-#define TOTAL_KEYS 4
+#include <Actor.h>
+#include <Camera.h>
+#include <Stage.h>
 
-#define ARROW_LEFT 0
-#define ARROW_UP 1
-#define ARROW_RIGHT 2
-#define ARROW_DOWN 3
-
-class Actor;
+using std::vector;
+using std::iterator;
 
 class Scene {
 
-public:
-	// Transformation pipeline and shaders manager
-	GLShaderManager		shaderManager;			// Shader Manager
-	GLMatrixStack		modelViewMatrix;		// Modelview Matrix
-	GLMatrixStack		projectionMatrix;		// Projection Matrix
-	GLFrustum			viewFrustum;			// View Frustum
-	GLGeometryTransform	transformPipeline;		// Geometry Transform Pipeline
+    private:
+        Camera *camera;
+        vector<Actor *> *actors;
+        vector<Interactive *> *interactives;
+        Stage *stage;
 
-	// Actors metaphore
-	GLFrame cameraFrame;
-	std::vector<Actor *> *actors;
-	GLBatch* stage;
-	M3DVector4f lightPosition;
-	GLfloat *color;
+        // Transformation pipeline and shaders manager
+        GLShaderManager		*shaderManager;			// Shader Manager
+        GLMatrixStack		*modelViewMatrix;		// Modelview Matrix
+        GLMatrixStack		*projectionMatrix;		// Projection Matrix
+        GLFrustum			*viewFrustum;			// View Frustum
+        GLGeometryTransform	*transformPipeline;		// Geometry Transform Pipeline
 
-	// Graphics details
-	float floorWidth;
-	float floorHeight;
-	float floorY;
-	int windowW, windowH;
-	float lastMouseXY[2];
-	bool keyPressed[TOTAL_KEYS];
-	static const float cameraStep = 0.5f;
+    public:
+        Scene();
+        ~Scene();
 
-	Scene(M3DVector4f lightPosition, GLfloat *color, float floorWidth, float floorHeight);
-	~Scene();
-
-	void render();
-	void addActor(Actor *a);
-	void hideActor(Actor *a);
-	void showActor(Actor *a);
-	void reshape(int newW, int newH);
-	void mouseMove(int x, int y);
-	void specialKey(int key, int x, int y, bool released);
-	void moveCamera();
-	void setKeyPressed(int key, int x, int y, bool released);
+        void addActor(Actor *a);
+        void addInteractive(Interactive *i);
+        void removeActor(Actor *a);
+        void removeInteractive(Interactive *i);
+        void showActor(Actor *a);
+        void hideActor(Actor *a);
+        void setCamera(Camera *c);
+        void setStage(Stage *s);
+        void render();
+        void reshape(int newW, int newH);
 
 };
 

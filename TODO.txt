@@ -1,0 +1,2 @@
+- How to avoid that the two wizards are controlled by the same keys (the other one will be controlled by commands sent over a network connection)
+- Implement collision detection
