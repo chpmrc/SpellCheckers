@@ -1,2 +1,39 @@
-- How to avoid that the two wizards are controlled by the same keys (the other one will be controlled by commands sent over a network connection)
-- Implement collision detection
+TODO:
+
+- ADD LIGHTING
+
+- ADD COLLISION DETECTION
+     - When a spell hits the wizard the wizard loses health and the spell disappears
+     (consider adding spells to the actors of the scene, it's easier to render them, the wizard only turn a switch "on" to render them)
+
+- Organize spell system (model is in common, frame and object are not!)
+
+- Create spell model (sphere with radius half of a wizard)
+- Create spell frame (same as wizard)
+- Create spell origin (on the fly)
+
+- Render wizards health somehow (green spheres every 10 points?)
+- Render wizards name somehow (use the bitmap printing function, they are fixed values)
+
+- Implement movement trajectory with following camera
+
+- Implement spell casting
+    - The wizard class must have a structure like this:
+        {SPELL_INDEX, "spell_name", (* spellCallback)(int spellIndex, string spellName) }
+
+    - Also each wizard must have its own buffer and a check function that looks for a match
+
+- Implement collision detection and response
+
+- Implement lights and textures
+
+
+Problems:
+
+- When dodging it slowly goes back
+- Can't follow the circle (phases: translate -> rotate by lookAt -> move forward by offset to correct trajectory)
+
+Ideas
+
+- Implement collision detection only in the rendering phase of each Actor (detect collision only with a given set of actors)
+

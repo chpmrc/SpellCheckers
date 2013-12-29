@@ -36,7 +36,13 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add directory="GLTools/include" />
+			<Add directory="include" />
+			<Add directory="GLTools/include/GL" />
 		</Compiler>
+		<Linker>
+			<Add option="-lGL -lglut" />
+		</Linker>
 		<Unit filename="GLTools/include/GL/glew.h" />
 		<Unit filename="GLTools/include/GL/glxew.h" />
 		<Unit filename="GLTools/include/GL/wglew.h" />
@@ -61,13 +67,22 @@
 		<Unit filename="GLTools/src/math3d.cpp" />
 		<Unit filename="TODO.txt" />
 		<Unit filename="include/Actor.h" />
+		<Unit filename="include/Camera.h" />
+		<Unit filename="include/Interactive.h" />
+		<Unit filename="include/OrientedBoundingBox.h" />
 		<Unit filename="include/Scene.h" />
-		<Unit filename="include/Spell.cpp" />
 		<Unit filename="include/Spell.h" />
+		<Unit filename="include/Stage.h" />
+		<Unit filename="include/Utils.h" />
 		<Unit filename="include/Wizard.h" />
 		<Unit filename="src/Actor.cpp" />
+		<Unit filename="src/Camera.cpp" />
 		<Unit filename="src/Game.cpp" />
+		<Unit filename="src/Interactive.cpp" />
+		<Unit filename="src/OrientedBoundingBox.cpp" />
 		<Unit filename="src/Scene.cpp" />
+		<Unit filename="src/Spell.cpp" />
+		<Unit filename="src/Stage.cpp" />
 		<Unit filename="src/Wizard.cpp" />
 		<Extensions>
 			<code_completion />

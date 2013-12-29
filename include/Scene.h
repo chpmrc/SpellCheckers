@@ -18,7 +18,7 @@
 using std::vector;
 using std::iterator;
 
-class Scene {
+class Scene : public Interactive {
 
     private:
         Camera *camera;
@@ -33,6 +33,10 @@ class Scene {
         GLFrustum			*viewFrustum;			// View Frustum
         GLGeometryTransform	*transformPipeline;		// Geometry Transform Pipeline
 
+        // Physics
+        float time;
+        float deltaTime; // time between frames
+
     public:
         Scene();
         ~Scene();
@@ -44,10 +48,17 @@ class Scene {
         void showActor(Actor *a);
         void hideActor(Actor *a);
         void setCamera(Camera *c);
+        Camera *getCamera();
         void setStage(Stage *s);
         void render();
         void reshape(int newW, int newH);
+        float getTime();
+        float getTimeFromLastFrame();
 
+        void onKeyPressed(char key, int x, int y);
+        void onKeyReleased(char key, int x, int y);
+        void onSpecialKeyPressed(int key, int x, int y);
+        void onSpecialKeyReleased(int key, int x, int y);
 };
 
 #endif

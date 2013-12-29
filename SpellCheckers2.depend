@@ -3,6 +3,8 @@
 	<GLBatch.h>
 	<GLShaderManager.h>
 
+1385980957 anager.h>
+
 1385980957 source:/home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/GLTools/src/glew.c
 	<GL/glew.h>
 	<GL/wglew.h>
@@ -19,10 +21,14 @@
 	<inttypes.h>
 	<inttypes.h>
 
+1385980957 h>
+
 1385980957 source:/home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/GLTools/src/GLShaderManager.cpp
 	<GLShaderManager.h>
 	<GLTools.h>
 	<stdarg.h>
+
+1387814539 
 
 1385980957 source:/home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/GLTools/src/GLTools.cpp
 	<GLTools.h>
@@ -41,10 +47,10 @@
 1385980957 source:/home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/GLTools/src/math3d.cpp
 	<math3d.h>
 
-1386970840 source:/home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/src/Actor.cpp
+1387731879 source:/home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/src/Actor.cpp
 	<Actor.h>
 
-1386971223 source:/home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/src/Game.cpp
+1387814368 source:/home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/src/Game.cpp
 	<GLTools.h>
 	<GL/freeglut.h>
 	<vector>
@@ -52,14 +58,19 @@
 	<Scene.h>
 	<Actor.h>
 	<Wizard.h>
+	<Spell.h>
 
-1386971250 source:/home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/src/Scene.cpp
+1387813662 source:/home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/src/Scene.cpp
 	<iostream>
 	<Actor.h>
 	<Scene.h>
 
-1386965730 source:/home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/src/Wizard.cpp
+1387814539 source:/home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/src/Wizard.cpp
 	<iostream>
+	<GLTools.h>
+	<GL/freeglut.h>
+	<cmath>
+	<Utils.h>
 	<Wizard.h>
 	<Spell.h>
 
@@ -80,12 +91,16 @@
 	<math3d.h>
 	<GLBatchBase.h>
 
+1385980957 se.h>
+
 1385980957 /home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers2/GLTools/include/GL/glew.h
 	<stddef.h>
 	<inttypes.h>
 	<stdint.h>
 	<inttypes.h>
 	<OpenGL/glu.h>
+
+1385980957 u.h>
 
 1385980957 /home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers2/GLTools/include/math3d.h
 	<math.h>
@@ -123,6 +138,8 @@
 1385980957 /home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers2/GLTools/include/GL/wglew.h
 	<windows.h>
 
+1385980957 >
+
 1385980957 /home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers2/GLTools/include/GL/glxew.h
 	<X11/Xlib.h>
 	<X11/Xutil.h>
@@ -151,6 +168,8 @@
 	<math3d.h>
 	<GLBatch.h>
 	<GLTriangleBatch.h>
+
+1385980957 eBatch.h>
 
 1385980957 /home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers2/GLTools/include/GLTriangleBatch.h
 	<windows.h>
@@ -195,6 +214,8 @@
 	<GLMatrixStack.h>
 	<GLGeometryTransform.h>
 	<StopWatch.h>
+
+1387731888 .h>
 
 1385980957 /home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers2/GLTools/include/GLFrustum.h
 	<math3d.h>
@@ -248,6 +269,8 @@
 	<Wizard.h>
 	<iostream>
 	<GL/freeglut.h>
+
+1386605782 ut.h>
 
 1385980957 /home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/GLTools/include/GLBatch.h
 	<windows.h>
@@ -327,7 +350,7 @@
 	<GLBatchBase.h>
 	<GLShaderManager.h>
 
-1386970855 /home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/include/Actor.h
+1387731888 /home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/include/Actor.h
 	<GLTools.h>
 	<GLShaderManager.h>
 	<GLFrustum.h>
@@ -356,7 +379,7 @@
 	<windows.h>
 	<sys/time.h>
 
-1386969865 /home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/include/Scene.h
+1387730647 /home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/include/Scene.h
 	<GLTools.h>
 	<GLShaderManager.h>
 	<GLFrustum.h>
@@ -370,18 +393,21 @@
 	<Camera.h>
 	<Stage.h>
 
-1386965702 /home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/include/Wizard.h
+1387731986 /home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/include/Wizard.h
 	<string>
 	<Actor.h>
 	<Scene.h>
 
-1386878037 source:/home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/include/Spell.cpp
+1387192324 source:/home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/include/Spell.cpp
+	<Spell.h>
 
 1386970870 /home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/include/Camera.h
 	<Actor.h>
 	<Interactive.h>
 
-1386946122 /home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/include/Interactive.h
+1387157798 ve.h>
+
+1387157777 /home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/include/Interactive.h
 
 1386967503 source:/home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/src/Camera.cpp
 	<Camera.h>
@@ -389,12 +415,491 @@
 1386970220 /home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/include/Stage.h
 	<Actor.h>
 
-1386878032 /home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/include/Spell.h
+1387732673 /home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/include/Spell.h
+	<Actor.h>
+	<string>
 
-1386946122 source:/home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/src/Interactive.cpp
+1387157798 source:/home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/src/Interactive.cpp
+	<GLTools.h>
+	<GL/freeglut.h>
+	<iostream>
 	<Interactive.h>
 
 1386971200 source:/home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/src/Stage.cpp
 	<iostream>
 	<Stage.h>
+
+1387192993 /home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/include/Utils.h
+	<iostream>
+
+1387813562 source:/home/Data/Dropbox/Projects/Cpp/OpenGL/SpellCheckers/src/Spell.cpp
+	<Spell.h>
+	<Scene.h>
+	<iostream>
+
+1385980957 source:d:\data\dropbox\projects\cpp\opengl\spellcheckers\gltools\src\glbatch.cpp
+	<GLBatch.h>
+	<GLShaderManager.h>
+
+1385980957 d:\data\dropbox\projects\cpp\opengl\spellcheckers\gltools\include\glbatch.h
+	<windows.h>
+	<gl\glew.h>
+	<gl\gl.h>
+	<TargetConditionals.h>
+	<OpenGLES/ES2/gl.h>
+	<OpenGLES/ES2/glext.h>
+	<GL/glew.h>
+	<OpenGL/gl.h>
+	<glew.h>
+	<math3d.h>
+	<GLBatchBase.h>
+
+1385980957 d:\data\dropbox\projects\cpp\opengl\spellcheckers\gltools\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<OpenGL/glu.h>
+
+1385980957 d:\data\dropbox\projects\cpp\opengl\spellcheckers\gltools\include\math3d.h
+	<math.h>
+	<string.h>
+
+1385980957 d:\data\dropbox\projects\cpp\opengl\spellcheckers\gltools\include\glbatchbase.h
+
+1385980957 d:\data\dropbox\projects\cpp\opengl\spellcheckers\gltools\include\glshadermanager.h
+	<windows.h>
+	<gl\glew.h>
+	<gl\gl.h>
+	<TargetConditionals.h>
+	<OpenGLES/ES2/gl.h>
+	<OpenGLES/ES2/glext.h>
+	<GL/glew.h>
+	<OpenGL/gl.h>
+	<glew.h>
+
+1385980957 source:d:\data\dropbox\projects\cpp\opengl\spellcheckers\gltools\src\glew.c
+	<GL/glew.h>
+	<GL/wglew.h>
+	<GL/glxew.h>
+	<stdlib.h>
+	<string.h>
+	<AvailabilityMacros.h>
+	<dlfcn.h>
+	<mach-o/dyld.h>
+	<dlfcn.h>
+	<stdio.h>
+	<stdlib.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+
+1385980957 d:\data\dropbox\projects\cpp\opengl\spellcheckers\gltools\include\gl\wglew.h
+	<windows.h>
+
+1385980957 d:\data\dropbox\projects\cpp\opengl\spellcheckers\gltools\include\gl\glxew.h
+	<X11/Xlib.h>
+	<X11/Xutil.h>
+	<X11/Xmd.h>
+	<GL/glew.h>
+	<inttypes.h>
+
+1385980957 source:d:\data\dropbox\projects\cpp\opengl\spellcheckers\gltools\src\glshadermanager.cpp
+	<GLShaderManager.h>
+	<GLTools.h>
+	<stdarg.h>
+
+1385980957 d:\data\dropbox\projects\cpp\opengl\spellcheckers\gltools\include\gltools.h
+	<windows.h>
+	<gl\glew.h>
+	<gl\gl.h>
+	<stdlib.h>
+	<TargetConditionals.h>
+	<OpenGLES/ES2/gl.h>
+	<OpenGLES/ES2/glext.h>
+	<GL/glew.h>
+	<OpenGL/gl.h>
+	<glew.h>
+	<stdio.h>
+	<math.h>
+	<math3d.h>
+	<GLBatch.h>
+	<GLTriangleBatch.h>
+
+1385980957 d:\data\dropbox\projects\cpp\opengl\spellcheckers\gltools\include\gltrianglebatch.h
+	<windows.h>
+	<gl\glew.h>
+	<gl\gl.h>
+	<TargetConditionals.h>
+	<OpenGLES/ES2/gl.h>
+	<OpenGLES/ES2/glext.h>
+	<GL/glew.h>
+	<OpenGL/gl.h>
+	<glew.h>
+	<math3d.h>
+	<GLBatchBase.h>
+	<GLShaderManager.h>
+
+1385980957 source:d:\data\dropbox\projects\cpp\opengl\spellcheckers\gltools\src\gltools.cpp
+	<GLTools.h>
+	<math3d.h>
+	<GLTriangleBatch.h>
+	<stdio.h>
+	<assert.h>
+	<stdarg.h>
+	<cstdlib>
+	<unistd.h>
+
+1385980957 source:d:\data\dropbox\projects\cpp\opengl\spellcheckers\gltools\src\gltrianglebatch.cpp
+	<GLTriangleBatch.h>
+	<GLShaderManager.h>
+
+1385980957 source:d:\data\dropbox\projects\cpp\opengl\spellcheckers\gltools\src\math3d.cpp
+	<math3d.h>
+
+1387731879 source:d:\data\dropbox\projects\cpp\opengl\spellcheckers\src\actor.cpp
+	<Actor.h>
+
+1387731888 d:\data\dropbox\projects\cpp\opengl\spellcheckers\include\actor.h
+	<GLTools.h>
+	<GLShaderManager.h>
+	<GLFrustum.h>
+	<GLBatch.h>
+	<GLFrame.h>
+	<GLMatrixStack.h>
+	<GLGeometryTransform.h>
+	<StopWatch.h>
+
+1385980957 d:\data\dropbox\projects\cpp\opengl\spellcheckers\gltools\include\glfrustum.h
+	<math3d.h>
+	<GLFrame.h>
+
+1385980957 d:\data\dropbox\projects\cpp\opengl\spellcheckers\gltools\include\glframe.h
+	<math3d.h>
+
+1385980957 d:\data\dropbox\projects\cpp\opengl\spellcheckers\gltools\include\glmatrixstack.h
+	<GLTools.h>
+	<math3d.h>
+	<GLFrame.h>
+
+1385980957 d:\data\dropbox\projects\cpp\opengl\spellcheckers\gltools\include\glgeometrytransform.h
+	<GLTools.h>
+
+1385980957 d:\data\dropbox\projects\cpp\opengl\spellcheckers\gltools\include\stopwatch.h
+	<windows.h>
+	<sys/time.h>
+
+1386967503 source:d:\data\dropbox\projects\cpp\opengl\spellcheckers\src\camera.cpp
+	<Camera.h>
+
+1386970870 d:\data\dropbox\projects\cpp\opengl\spellcheckers\include\camera.h
+	<Actor.h>
+	<Interactive.h>
+
+1387157777 d:\data\dropbox\projects\cpp\opengl\spellcheckers\include\interactive.h
+
+1387814368 source:d:\data\dropbox\projects\cpp\opengl\spellcheckers\src\game.cpp
+	<GLTools.h>
+	<GL/freeglut.h>
+	<vector>
+	<iostream>
+	<Scene.h>
+	<Actor.h>
+	<Wizard.h>
+	<Spell.h>
+
+1387730647 d:\data\dropbox\projects\cpp\opengl\spellcheckers\include\scene.h
+	<GLTools.h>
+	<GLShaderManager.h>
+	<GLFrustum.h>
+	<GLBatch.h>
+	<GLFrame.h>
+	<GLMatrixStack.h>
+	<GLGeometryTransform.h>
+	<StopWatch.h>
+	<vector>
+	<Actor.h>
+	<Camera.h>
+	<Stage.h>
+
+1386970220 d:\data\dropbox\projects\cpp\opengl\spellcheckers\include\stage.h
+	<Actor.h>
+
+1387731986 d:\data\dropbox\projects\cpp\opengl\spellcheckers\include\wizard.h
+	<string>
+	<Actor.h>
+	<Scene.h>
+
+1387732673 d:\data\dropbox\projects\cpp\opengl\spellcheckers\include\spell.h
+	<Actor.h>
+	<string>
+
+1387157798 source:d:\data\dropbox\projects\cpp\opengl\spellcheckers\src\interactive.cpp
+	<GLTools.h>
+	<GL/freeglut.h>
+	<iostream>
+	<Interactive.h>
+
+1387813662 source:d:\data\dropbox\projects\cpp\opengl\spellcheckers\src\scene.cpp
+	<iostream>
+	<Actor.h>
+	<Scene.h>
+
+1387813562 source:d:\data\dropbox\projects\cpp\opengl\spellcheckers\src\spell.cpp
+	<Spell.h>
+	<Scene.h>
+	<iostream>
+
+1386971200 source:d:\data\dropbox\projects\cpp\opengl\spellcheckers\src\stage.cpp
+	<iostream>
+	<Stage.h>
+
+1387814539 source:d:\data\dropbox\projects\cpp\opengl\spellcheckers\src\wizard.cpp
+	<iostream>
+	<GLTools.h>
+	<GL/freeglut.h>
+	<cmath>
+	<Utils.h>
+	<Wizard.h>
+	<Spell.h>
+
+1387192993 d:\data\dropbox\projects\cpp\opengl\spellcheckers\include\utils.h
+	<iostream>
+
+1385980957 source:/home/mardurhack/Desktop/SpellCheckers/GLTools/src/GLBatch.cpp
+	<GLBatch.h>
+	<GLShaderManager.h>
+
+1385980957 /home/mardurhack/Desktop/SpellCheckers/GLTools/include/GLBatch.h
+	<windows.h>
+	<gl\glew.h>
+	<gl\gl.h>
+	<TargetConditionals.h>
+	<OpenGLES/ES2/gl.h>
+	<OpenGLES/ES2/glext.h>
+	<GL/glew.h>
+	<OpenGL/gl.h>
+	<glew.h>
+	<math3d.h>
+	<GLBatchBase.h>
+
+1385980957 /home/mardurhack/Desktop/SpellCheckers/GLTools/include/GL/glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<OpenGL/glu.h>
+
+1385980957 /home/mardurhack/Desktop/SpellCheckers/GLTools/include/math3d.h
+	<math.h>
+	<string.h>
+
+1385980957 /home/mardurhack/Desktop/SpellCheckers/GLTools/include/GLBatchBase.h
+
+1385980957 /home/mardurhack/Desktop/SpellCheckers/GLTools/include/GLShaderManager.h
+	<windows.h>
+	<gl\glew.h>
+	<gl\gl.h>
+	<TargetConditionals.h>
+	<OpenGLES/ES2/gl.h>
+	<OpenGLES/ES2/glext.h>
+	<GL/glew.h>
+	<OpenGL/gl.h>
+	<glew.h>
+
+1385980957 source:/home/mardurhack/Desktop/SpellCheckers/GLTools/src/glew.c
+	<GL/glew.h>
+	<GL/wglew.h>
+	<GL/glxew.h>
+	<stdlib.h>
+	<string.h>
+	<AvailabilityMacros.h>
+	<dlfcn.h>
+	<mach-o/dyld.h>
+	<dlfcn.h>
+	<stdio.h>
+	<stdlib.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+
+1385980957 /home/mardurhack/Desktop/SpellCheckers/GLTools/include/GL/wglew.h
+	<windows.h>
+
+1385980957 /home/mardurhack/Desktop/SpellCheckers/GLTools/include/GL/glxew.h
+	<X11/Xlib.h>
+	<X11/Xutil.h>
+	<X11/Xmd.h>
+	<GL/glew.h>
+	<inttypes.h>
+
+1385980957 source:/home/mardurhack/Desktop/SpellCheckers/GLTools/src/GLShaderManager.cpp
+	<GLShaderManager.h>
+	<GLTools.h>
+	<stdarg.h>
+
+1385980957 /home/mardurhack/Desktop/SpellCheckers/GLTools/include/GLTools.h
+	<windows.h>
+	<gl\glew.h>
+	<gl\gl.h>
+	<stdlib.h>
+	<TargetConditionals.h>
+	<OpenGLES/ES2/gl.h>
+	<OpenGLES/ES2/glext.h>
+	<GL/glew.h>
+	<OpenGL/gl.h>
+	<glew.h>
+	<stdio.h>
+	<math.h>
+	<math3d.h>
+	<GLBatch.h>
+	<GLTriangleBatch.h>
+
+1385980957 /home/mardurhack/Desktop/SpellCheckers/GLTools/include/GLTriangleBatch.h
+	<windows.h>
+	<gl\glew.h>
+	<gl\gl.h>
+	<TargetConditionals.h>
+	<OpenGLES/ES2/gl.h>
+	<OpenGLES/ES2/glext.h>
+	<GL/glew.h>
+	<OpenGL/gl.h>
+	<glew.h>
+	<math3d.h>
+	<GLBatchBase.h>
+	<GLShaderManager.h>
+
+1385980957 source:/home/mardurhack/Desktop/SpellCheckers/GLTools/src/GLTools.cpp
+	<GLTools.h>
+	<math3d.h>
+	<GLTriangleBatch.h>
+	<stdio.h>
+	<assert.h>
+	<stdarg.h>
+	<cstdlib>
+	<unistd.h>
+
+1385980957 source:/home/mardurhack/Desktop/SpellCheckers/GLTools/src/GLTriangleBatch.cpp
+	<GLTriangleBatch.h>
+	<GLShaderManager.h>
+
+1385980957 source:/home/mardurhack/Desktop/SpellCheckers/GLTools/src/math3d.cpp
+	<math3d.h>
+
+1388360685 source:/home/mardurhack/Desktop/SpellCheckers/src/Actor.cpp
+	<Actor.h>
+	<OrientedBoundingBox.h>
+
+1388356421 /home/mardurhack/Desktop/SpellCheckers/include/Actor.h
+	<GLTools.h>
+	<GLShaderManager.h>
+	<GLFrustum.h>
+	<GLBatch.h>
+	<GLFrame.h>
+	<GLMatrixStack.h>
+	<GLGeometryTransform.h>
+	<StopWatch.h>
+	<vector>
+
+1385980957 /home/mardurhack/Desktop/SpellCheckers/GLTools/include/GLFrustum.h
+	<math3d.h>
+	<GLFrame.h>
+
+1385980957 /home/mardurhack/Desktop/SpellCheckers/GLTools/include/GLFrame.h
+	<math3d.h>
+
+1385980957 /home/mardurhack/Desktop/SpellCheckers/GLTools/include/GLMatrixStack.h
+	<GLTools.h>
+	<math3d.h>
+	<GLFrame.h>
+
+1385980957 /home/mardurhack/Desktop/SpellCheckers/GLTools/include/GLGeometryTransform.h
+	<GLTools.h>
+
+1385980957 /home/mardurhack/Desktop/SpellCheckers/GLTools/include/StopWatch.h
+	<windows.h>
+	<sys/time.h>
+
+1386967503 source:/home/mardurhack/Desktop/SpellCheckers/src/Camera.cpp
+	<Camera.h>
+
+1386970870 /home/mardurhack/Desktop/SpellCheckers/include/Camera.h
+	<Actor.h>
+	<Interactive.h>
+
+1387157777 /home/mardurhack/Desktop/SpellCheckers/include/Interactive.h
+
+1387157798 source:/home/mardurhack/Desktop/SpellCheckers/src/Interactive.cpp
+	<GLTools.h>
+	<GL/freeglut.h>
+	<iostream>
+	<Interactive.h>
+
+1387813662 source:/home/mardurhack/Desktop/SpellCheckers/src/Scene.cpp
+	<iostream>
+	<Actor.h>
+	<Scene.h>
+
+1387730647 /home/mardurhack/Desktop/SpellCheckers/include/Scene.h
+	<GLTools.h>
+	<GLShaderManager.h>
+	<GLFrustum.h>
+	<GLBatch.h>
+	<GLFrame.h>
+	<GLMatrixStack.h>
+	<GLGeometryTransform.h>
+	<StopWatch.h>
+	<vector>
+	<Actor.h>
+	<Camera.h>
+	<Stage.h>
+
+1386970220 /home/mardurhack/Desktop/SpellCheckers/include/Stage.h
+	<Actor.h>
+
+1388360875 source:/home/mardurhack/Desktop/SpellCheckers/src/Spell.cpp
+	<Spell.h>
+	<Scene.h>
+	<iostream>
+
+1387732673 /home/mardurhack/Desktop/SpellCheckers/include/Spell.h
+	<Actor.h>
+	<string>
+
+1386971200 source:/home/mardurhack/Desktop/SpellCheckers/src/Stage.cpp
+	<iostream>
+	<Stage.h>
+
+1387814539 source:/home/mardurhack/Desktop/SpellCheckers/src/Wizard.cpp
+	<iostream>
+	<GLTools.h>
+	<GL/freeglut.h>
+	<cmath>
+	<Utils.h>
+	<Wizard.h>
+	<Spell.h>
+
+1387192993 /home/mardurhack/Desktop/SpellCheckers/include/Utils.h
+	<iostream>
+
+1387731986 /home/mardurhack/Desktop/SpellCheckers/include/Wizard.h
+	<string>
+	<Actor.h>
+	<Scene.h>
+
+1388360636 source:/home/mardurhack/Desktop/SpellCheckers/src/Game.cpp
+	<GLTools.h>
+	<GL/freeglut.h>
+	<vector>
+	<iostream>
+	<Scene.h>
+	<Actor.h>
+	<Wizard.h>
+	<Spell.h>
+	<OrientedBoundingBox.h>
+
+1388360499 /home/mardurhack/Desktop/SpellCheckers/include/OrientedBoundingBox.h
+
+1388360659 source:/home/mardurhack/Desktop/SpellCheckers/src/OrientedBoundingBox.cpp
+	<OrientedBoundingBox.h>
 
